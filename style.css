@@ -1,0 +1,76 @@
+button{
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding: 5px;
+  text-align:center; 
+  display: inline-block;
+}
+button:hover{
+  background-color: darkblue;
+  cursor: pointer;
+  
+}
+
+.article {
+width: 300px;
+height: 600px;
+ border-radius: 25px;
+ border-style: solid;
+ background-color: lightgrey;
+ text-align:center;
+ position: relative;
+ display: flex;
+ flex-flow: wrap column;
+}
+.article img{
+background: cover;
+width: 300px;
+border-radius:25px;
+float:center; 
+}
+.article p{
+  text-align: left;
+  
+}  
+.article h3{
+  text-align:left; 
+}
+
+.brick {
+  position: relative;
+  width: 100%;
+  padding:0;
+}
+
+.pic {
+  position: relative;
+  display:inline-block;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.pic img{
+  position: relative;
+  border-color: coral;
+  border-style: solid;
+  border-width: 4.5px;
+  border-radius: 3px;
+}
+
+.text {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 167px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0, 0.5);
+  transition:  opacity 500ms;
+}
+
+.pic img:hover .text{
+ opacity: 1;
+}
